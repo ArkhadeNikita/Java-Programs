@@ -5,20 +5,21 @@ import java.util.Scanner;
 public class SecondAss {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter your Name");
-		String s1 = sc.nextLine();
-		System.out.println("Confirm your Name");
-		String s2 = sc.nextLine();
+		Scanner sc = new Scanner (System.in);
 
-       if(s1.equals(s2)) 
-       {
-    	   System.out.println("cangrats both values match!!");
-       } 
-       else 
-       {
-    	   System.out.println("Name already Exist");
-       }
+		System.out.println("Enter The Text1- ");
+		String a = sc.next();
+		System.out.println("Enter The Text2- ");
+		String b = sc.next();
+
+		if (a.contains(b))
+		{
+			System.out.println("First String Exists in Second String");
+		}
+		else 
+		{
+			System.out.println("First String Does not Exists in Second String");
+		}
 
 	}
 
